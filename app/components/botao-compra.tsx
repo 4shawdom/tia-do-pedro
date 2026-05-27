@@ -3,7 +3,7 @@
 import { Secao, Manuscrita } from "./marca";
 
 // Link de pagamento oficial — Faça Você Mesma 3.0 (Cakto — revertido em 21/05/2026)
-export const CHECKOUT_URL = "https://pay.cakto.com.br/39ehrhm_882751";
+export const CHECKOUT_URL = "https://pay.cakto.com.br/39ehrhm_882751?affiliate=FPpZhD2U";
 // Teste Ticto (descomentar e comentar o de cima pra voltar ao teste):
 // export const CHECKOUT_URL = "https://checkout.ticto.app/O50141A17";
 
