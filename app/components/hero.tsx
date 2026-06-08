@@ -18,7 +18,11 @@ export default function Hero() {
  <Secao fundo="paper" padding="hero" largura="wide" priority>
  <div className="grid md:grid-cols-2 gap-12 items-center">
 
- <div className="animate-fade-up">
+ {/* Sem animação de entrada aqui: é a seção do LCP — opacity:0 no estado
+     inicial atrasa o "render time" reportado pelo Lighthouse/Chrome em
+     até ~0,9s–1,2s (a animação fade-up só é considerada "pintada" quando
+     a opacidade chega em 1). */}
+ <div>
  <div className="flex items-center gap-4 mb-7">
  <Image
    src="/logo/casa-da-chita-logo.png"
@@ -59,7 +63,7 @@ export default function Hero() {
  </div>
  </div>
 
- <div className="relative animate-fade-up-d2">
+ <div className="relative">
  <FotoEmoldurada
  src="/fotos/jacira-loja-bolsa-colorida.jpg"
  alt="Jacira na loja da Casa da Chita segurando uma bolsa bordada"

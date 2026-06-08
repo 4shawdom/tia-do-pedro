@@ -198,30 +198,6 @@ h1, h2, h3, h4 {
   background-size: 100% 100%, 100% 100%, 100% 100%, 24px 24px;
 }
 
-/* Faixa de textura chita lateral (opcional pra hero/seções decorativas) */
-.chita-faixa-esq,
-.chita-faixa-dir {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 80px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  pointer-events: none;
-  opacity: 0.88;
-  z-index: 0;
-}
-.chita-faixa-esq {
-  left: 0;
-  background-image: url('/textura/chita-original.png');
-  background-position: left center;
-}
-.chita-faixa-dir {
-  right: 0;
-  background-image: url('/textura/chita-mirror.png');
-  background-position: right center;
-}
-
 /* content-visibility: o navegador pula a renderização de seções fora da tela
    no carregamento inicial, liberando a thread principal mais cedo (melhora LCP).
    contain-intrinsic-size reserva altura estimada pra não pular o scroll. */
